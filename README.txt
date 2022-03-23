@@ -1,7 +1,7 @@
 SMART PANTRY - DOCUMENTATION
 ---------------------------------
 
-Compile - 'gcc main.c UserInfo.c DietInfo.c ECinfo.c -o SmartPantry'
+Compile - 'gcc main.c UserInfo.c DietInfo.c ECinfo.c Inventory.c -o SmartPantry'
 Run - './SmartPantry'
 
 ---------------------------------
