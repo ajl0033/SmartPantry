@@ -4,6 +4,7 @@
 #include "UserInfo.h"
 #include "DietInfo.h"
 #include "ECinfo.h"
+#include "Inventory.h"
 
 int main() {
 
