@@ -11,12 +11,17 @@ void userinfo() {
   // Loop Validation
   char *yn = (char*)malloc(3);
 
+  // User Info
+  char *User_FirstName = (char*)malloc(20);
+  char *User_LastName = (char*)malloc(20);
+  char *User_Email = (char*)malloc(40);
+  char *User_PhoneNumber = (char*)malloc(12);
+
   printf("WELCOME TO THE SMART PANTRY\n---------------------------\n\n");
 
   printf("Initial Setup:\n");
   while (1) {
 
-    // User Info
     char *User_FirstName = (char*)malloc(20);
     char *User_LastName = (char*)malloc(20);
     char *User_Email = (char*)malloc(40);

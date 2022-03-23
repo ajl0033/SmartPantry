@@ -7,6 +7,10 @@ void dietinfo() {
 
   char *yn = (char*)malloc(3);
 
+  char *User_Age = (char*)malloc(10);
+  char *User_Height = (char*)malloc(10);
+  char *User_Weight = (char*)malloc(10);
+
   while(1){
 
     char *User_Age = (char*)malloc(10);
