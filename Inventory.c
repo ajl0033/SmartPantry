@@ -4,6 +4,9 @@
 #include "Inventory.h"
 
 void inventory() {
+  // Opening Inventory.txt
+  FILE *fp;
+  fp = fopen("/Data/Inventory.txt", "w+");
 
 // Loop Validation
 char *yn = (char*)malloc(3);
@@ -24,6 +27,7 @@ while (1) {
       break;
     }
     char *Item_Name = (char*)malloc(50);
+    fprintf(fp, *Item_Name + "\n");
   }
 
   while (1) {
@@ -36,11 +40,12 @@ while (1) {
       break;
     }
     char *Item_Weight = (char*)malloc(20);
+    fprintf(fp, *Item_Weight + "\n");
   }
 
   while (1) {
     char *yn = (char*)malloc(3);
-    printf("\nPlease enter the threshold to be notified at between 0-100 -- ie. when apples are less than 50 percent original weight an email and/or text will be sent \n>> ");
+    printf("\nPlease enter the threshold to be notified at between 0-100 -- ie. notified when apples are less than 50% orginal weight an email will be sent \n>> ");
     fgets(Threshold, 20, stdin);
     printf("\nIs this correct? (type 'y' for yes, 'n' for no)\nYou entered: %s>> ",Threshold);
     fgets(yn, 3, stdin);
@@ -48,12 +53,14 @@ while (1) {
       break;
     }
     char *Threshold = (char*)malloc(20);
+    fprintf(fp, *Threshold + "\n");
   }
 
-  printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nItem Name: %sItem Weight: %sThreshold: %s>> ", Item_Name, Item_Weight, Threshold);
+  printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nItem Name: %sItem Weight: %sEmail: %sThreshold): %s>> ", Item_Name, Item_Weight, Threshold);
   fgets(yn, 3, stdin);
   if (yn[0] == 'y') {
     break;
     }
   }
+  fclose(fp);
 }
