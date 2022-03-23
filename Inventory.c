@@ -63,8 +63,8 @@ while (1) {
     break;
     }
   }
-  fprintf(fp, *Threshold + "\n");
-  fprintf(fp, *Item_Weight + "\n");
   fprintf(fp, *Item_Name + "\n");
+  fprintf(fp, *Item_Weight + "\n")
+  fprintf(fp, *Threshold + "\n");
   fclose(fp);
 }
