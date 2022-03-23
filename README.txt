@@ -1,5 +1,5 @@
 SMART PANTRY - DOCUMENTATION
 ---------------------------------
 
-Compile - gcc main.c -o SmartPantry
-Run - ./SmartPantry
+Compile - 'gcc main.c UserInfo.c -o SmartPantry'
+Run - './SmartPantry'
