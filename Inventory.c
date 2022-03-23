@@ -6,7 +6,10 @@
 void inventory() {
   // Opening Inventory.txt
   FILE *fp;
-  fp = fopen("/Data/Inventory.txt", "w+");
+  fp = fopen("Data/Inventory.txt", "w+");
+  if (fp == NULL) {
+    printf("\n\nERROR opening FILE\n\n");
+  }
 
   char *Item_Name = (char*)malloc(50);
   char *Item_Weight = (char*)malloc(20);
@@ -60,11 +63,13 @@ while (1) {
   printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nItem Name: %sItem Weight: %sThreshold: %s>> ", Item_Name, Item_Weight, Threshold);
   fgets(yn, 3, stdin);
   if (yn[0] == 'y') {
+    fprintf(fp, "%s", Item_Name);
+    fprintf(fp, "%s", Item_Weight);
+    fprintf(fp, "%s", Threshold);
     break;
     }
   }
-  fprintf(fp, "%s\n", Item_Name);
-  fprintf(fp, "%s\n", Item_Weight);
-  fprintf(fp, "%s\n", Threshold);
+
   fclose(fp);
+  return;
 }

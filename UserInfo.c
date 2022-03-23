@@ -6,7 +6,10 @@
 void userinfo() {
   // Opening User.txt
   FILE *fp;
-  fp = fopen("/Data/User.txt", "w+");
+  fp = fopen("Data/User.txt", "w+");
+  if (fp == NULL) {
+    printf("\n\nERROR opening FILE\n\n");
+  }
 
   // Loop Validation
   char *yn = (char*)malloc(3);
@@ -82,12 +85,14 @@ void userinfo() {
     printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nFirst Name: %sLast Name: %sEmail: %sPhone Number: %s>> ", User_FirstName, User_LastName, User_Email, User_PhoneNumber);
     fgets(yn, 3, stdin);
     if (yn[0] == 'y') {
+      fprintf(fp, "%s", User_FirstName);
+      fprintf(fp, "%s", User_LastName);
+      fprintf(fp, "%s", User_Email);
+      fprintf(fp, "%s", User_PhoneNumber);
       break;
     }
   }
-  fprintf(fp, "%s\n", User_FirstName);
-  fprintf(fp, "%s\n", User_LastName);
-  fprintf(fp, "%s\n", User_Email);
-  fprintf(fp, "%s\n", User_PhoneNumber);
+
   fclose(fp);
+  return;
 }
