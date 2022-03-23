@@ -5,7 +5,7 @@
 
 int main() {
 
-  init();
+  userinfo();
 
   return 1;
 }

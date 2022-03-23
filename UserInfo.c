@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "UserInfo.h"
 
-void init() {
+void userinfo() {
 
   // User Info
   char *User_FirstName = (char*)malloc(20);
