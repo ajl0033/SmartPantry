@@ -10,6 +10,7 @@ int main() {
   userinfo();
   dietinfo();
   ECinfo();
+  inventory();
 
   return 1;
 }
