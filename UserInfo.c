@@ -85,9 +85,9 @@ void userinfo() {
       break;
     }
   }
-  fprintf(fp, *User_FirstName + "\n");
-  fprintf(fp, *User_LastName + "\n");
-  fprintf(fp, *User_Email + "\n");
-  fprintf(fp, *User_PhoneNumber + "\n");
+  fprintf(fp, "%s\n", User_FirstName);
+  fprintf(fp, "%s\n", User_LastName);
+  fprintf(fp, "%s\n", User_Email);
+  fprintf(fp, "%s\n", User_PhoneNumber);
   fclose(fp);
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <strings.h>
 #include <stdlib.h>
-#include "DietInfo.h"
 
 void ECinfo() {
 // Opening EmergencyContact.txt
@@ -81,9 +80,9 @@ while (1) {
     break;
   }
   }
-  fprintf(fp, *EC_FirstName + "\n");
-  fprintf(fp, *EC_LastName + "\n");
-  fprintf(fp, *EC_Email + "\n");
-  fprintf(fp, *EC_PhoneNumber + "\n");
+  fprintf(fp, "%s\n", EC_FirstName);
+  fprintf(fp, "%s\n", EC_LastName);
+  fprintf(fp, "%s\n", EC_Email);
+  fprintf(fp, "%s\n", EC_PhoneNumber);
   fclose(fp);
 }
