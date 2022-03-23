@@ -5,12 +5,6 @@
 
 void userinfo() {
 
-  // User Info
-  char *User_FirstName = (char*)malloc(20);
-  char *User_LastName = (char*)malloc(20);
-  char *User_Email = (char*)malloc(40);
-  char *User_PhoneNumber = (char*)malloc(12);
-
   // Loop Validation
   char *yn = (char*)malloc(3);
 
@@ -18,6 +12,13 @@ void userinfo() {
 
   printf("Initial Setup:\n");
   while (1) {
+
+    // User Info
+    char *User_FirstName = (char*)malloc(20);
+    char *User_LastName = (char*)malloc(20);
+    char *User_Email = (char*)malloc(40);
+    char *User_PhoneNumber = (char*)malloc(12);
+
     // First Name
     while (1) {
       char *yn = (char*)malloc(3);

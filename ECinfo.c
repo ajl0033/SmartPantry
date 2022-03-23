@@ -5,15 +5,16 @@
 
 void ECinfo() {
 
-char *EC_FirstName = (char*)malloc(20);
-char *EC_LastName = (char*)malloc(20);
-char *EC_Email = (char*)malloc(40);
-char *EC_PhoneNumber = (char*)malloc(12);
-
 // Loop Validation
 char *yn = (char*)malloc(3);
+
 while (1) {
-  // First Name
+
+  char *EC_FirstName = (char*)malloc(20);
+  char *EC_LastName = (char*)malloc(20);
+  char *EC_Email = (char*)malloc(40);
+  char *EC_PhoneNumber = (char*)malloc(12);
+
   while (1) {
     char *yn = (char*)malloc(3);
     printf("\nPlease enter the Emergency Contact's first name\n>> ");
@@ -70,6 +71,6 @@ while (1) {
   fgets(yn, 3, stdin);
   if (yn[0] == 'y') {
     break;
-    }
+  }
   }
 }
