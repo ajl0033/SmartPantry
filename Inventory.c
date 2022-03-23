@@ -31,7 +31,6 @@ while (1) {
       break;
     }
     char *Item_Name = (char*)malloc(50);
-    fprintf(fp, *Item_Name + "\n");
   }
 
   while (1) {
@@ -44,7 +43,6 @@ while (1) {
       break;
     }
     char *Item_Weight = (char*)malloc(20);
-    fprintf(fp, *Item_Weight + "\n");
   }
 
   while (1) {
@@ -57,7 +55,6 @@ while (1) {
       break;
     }
     char *Threshold = (char*)malloc(20);
-    fprintf(fp, *Threshold + "\n");
   }
 
   printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nItem Name: %sItem Weight: %sEmail: %sThreshold): %s>> ", Item_Name, Item_Weight, Threshold);
@@ -66,5 +63,8 @@ while (1) {
     break;
     }
   }
+  fprintf(fp, *Threshold + "\n");
+  fprintf(fp, *Item_Weight + "\n");
+  fprintf(fp, *Item_Name + "\n");
   fclose(fp);
 }
