@@ -12,7 +12,7 @@ Line 2: Last Name
 Line 3: Email
 Line 4: Phone Number
 
-EmergencyContanct.txt:
+EmergencyContact.txt:
 Line 1: First Name
 Line 2: Last Name
 Line 3: Email
