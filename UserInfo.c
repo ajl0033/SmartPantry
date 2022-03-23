@@ -11,12 +11,17 @@ void userinfo() {
   // Loop Validation
   char *yn = (char*)malloc(3);
 
+  // User Info
+  char *User_FirstName = (char*)malloc(20);
+  char *User_LastName = (char*)malloc(20);
+  char *User_Email = (char*)malloc(40);
+  char *User_PhoneNumber = (char*)malloc(12);
+
   printf("WELCOME TO THE SMART PANTRY\n---------------------------\n\n");
 
   printf("Initial Setup:\n");
   while (1) {
 
-    // User Info
     char *User_FirstName = (char*)malloc(20);
     char *User_LastName = (char*)malloc(20);
     char *User_Email = (char*)malloc(40);
@@ -33,7 +38,6 @@ void userinfo() {
         break;
       }
       char *User_FirstName = (char*)malloc(20);
-      fprintf(fp, *User_FirstName + "\n");
     }
 
     // Last Name
@@ -47,7 +51,6 @@ void userinfo() {
         break;
       }
       char *User_LastName = (char*)malloc(20);
-      fprintf(fp, *User_LastName + "\n");
     }
 
     // Email
@@ -61,7 +64,6 @@ void userinfo() {
         break;
       }
       char *User_Email = (char*)malloc(40);
-      fprintf(fp, *User_Email + "\n");
     }
 
     // Phone Number
@@ -75,7 +77,6 @@ void userinfo() {
         break;
       }
       char *User_PhoneNumber = (char*)malloc(12);
-      fprintf(fp, *User_PhoneNumber + "\n");
     }
 
     printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nFirst Name: %sLast Name: %sEmail: %sPhone Number: %s>> ", User_FirstName, User_LastName, User_Email, User_PhoneNumber);
@@ -84,5 +85,9 @@ void userinfo() {
       break;
     }
   }
+  fprintf(fp, *User_FirstName + "\n");
+  fprintf(fp, *User_LastName + "\n");
+  fprintf(fp, *User_Email + "\n");
+  fprintf(fp, *User_PhoneNumber + "\n");
   fclose(fp);
 }

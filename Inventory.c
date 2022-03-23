@@ -8,6 +8,10 @@ void inventory() {
   FILE *fp;
   fp = fopen("/Data/Inventory.txt", "w+");
 
+  char *Item_Name = (char*)malloc(50);
+  char *Item_Weight = (char*)malloc(20);
+  char *Threshold = (char*)malloc(20);
+
 // Loop Validation
 char *yn = (char*)malloc(3);
 

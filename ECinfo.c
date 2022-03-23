@@ -11,6 +11,11 @@ fp = fopen("/Data/EmergencyContact.txt", "w+");
 // Loop Validation
 char *yn = (char*)malloc(3);
 
+char *EC_FirstName = (char*)malloc(20);
+char *EC_LastName = (char*)malloc(20);
+char *EC_Email = (char*)malloc(40);
+char *EC_PhoneNumber = (char*)malloc(12);
+
 while (1) {
 
   char *EC_FirstName = (char*)malloc(20);
