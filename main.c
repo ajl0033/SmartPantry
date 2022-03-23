@@ -6,6 +6,8 @@
 int main() {
 
   userinfo();
+  dietinfo();
+  ECinfo();
 
   return 1;
 }
