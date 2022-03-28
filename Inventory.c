@@ -38,7 +38,7 @@ while (1) {
 
   while (1) {
     char *yn = (char*)malloc(3);
-    printf("\nPlease enter the items weight\n>> ");
+    printf("\nPlease enter the items weight in pounds between 0-50\n>> ");
     fgets(Item_Weight, 20, stdin);
     printf("\nIs this correct? (type 'y' for yes, 'n' for no)\nYou entered: %s>> ",Item_Weight);
     fgets(yn, 3, stdin);
