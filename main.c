@@ -4,6 +4,7 @@
 #include "UserInfo.h"
 #include "ECinfo.h"
 #include "Inventory.h"
+#include "PSinventory.h"
 
 int main() {
 
@@ -42,6 +43,7 @@ int main() {
       printf("BBB\n\n");
     } else if (UserInput[0] == 'c') {
       printf("CCC\n\n");
+      PSinventory();
     } else if (UserInput[0] == 'd') {
       printf("\nShutting down...\n\n");
       break;
