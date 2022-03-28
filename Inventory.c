@@ -63,9 +63,8 @@ while (1) {
   printf("\nIs all of your information correct? (type 'y' for yes, 'n' for no)\nYou entered...\nItem Name: %sItem Weight: %sThreshold: %s>> ", Item_Name, Item_Weight, Threshold);
   fgets(yn, 3, stdin);
   if (yn[0] == 'y') {
-    fprintf(fp, "%s", Item_Name);
-    fprintf(fp, "%s", Item_Weight);
-    fprintf(fp, "%s", Threshold);
+    fprintf(fp, "%s %s %s ", Item_Name,Item_Weight,Threshold);
+
     break;
     }
   }
