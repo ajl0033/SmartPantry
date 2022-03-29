@@ -7,9 +7,20 @@
 
 int main() {
 
-  userinfo();
-  ECinfo();
-  inventory();
+  FILE *fp;
+  fp = fopen("Data/User.txt", "r");
+  if (fp == NULL) {
+    printf("\n\nERROR opening FILE\n\n");
+  }
+  if (fgetc(fp) == -1) {
+    printf("No Data\n\n");
+    userinfo();
+    ECinfo();
+    inventory();
+  }
+
+
+
 
   return 1;
 }
