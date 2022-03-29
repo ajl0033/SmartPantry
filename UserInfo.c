@@ -20,9 +20,7 @@ void userinfo() {
   char *User_Email = (char*)malloc(40);
   char *User_PhoneNumber = (char*)malloc(12);
 
-  printf("WELCOME TO THE SMART PANTRY\n---------------------------\n\n");
-
-  printf("Initial Setup:\n");
+  
   while (1) {
 
     char *User_FirstName = (char*)malloc(20);
