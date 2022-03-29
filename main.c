@@ -4,7 +4,6 @@
 #include "UserInfo.h"
 #include "ECinfo.h"
 #include "Inventory.h"
-#include "PSinventory.h"
 
 int main() {
 
@@ -32,17 +31,17 @@ int main() {
     printf("b) Edit Emergency Contact Information\n");
     printf("c) Edit Item Information\n");
     printf("d) Shutdown\n");
+    printf(">> ");
 
     // Get User Selection
     fgets(UserInput, 3, stdin);
 
     // Logic to determine what to execute
     if (UserInput[0] == 'a') {
-      printf("AAA\n\n");
+      userinfo();
     } else if (UserInput[0] == 'b') {
-      printf("BBB\n\n");
+      ECinfo();
     } else if (UserInput[0] == 'c') {
-      printf("CCC\n\n");
       PSinventory();
     } else if (UserInput[0] == 'd') {
       printf("\nShutting down...\n\n");
