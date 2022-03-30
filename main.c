@@ -42,7 +42,7 @@ int main() {
     } else if (UserInput[0] == 'b') {
       ECinfo();
     } else if (UserInput[0] == 'c') {
-      PSinventory();
+      inventory();
     } else if (UserInput[0] == 'd') {
       printf("\nShutting down...\n\n");
       break;
